@@ -1,0 +1,47 @@
+
+package com.mycompany.pacetech;
+ // @author Tainá
+import java.util.Scanner;
+
+public class Pacetech {
+
+    public static void main(String[] args) {
+        
+        float opcao;
+        float valor;
+        float valor_2;
+        float conversor_1;
+        float conversor_2;
+                
+        System.out.println("Hello World!");
+        System.out.println("Digite 1 para converter quilômetros em metros");
+        System.out.println("Digite 2 para converter litros em metros cúbicos");
+        System.out.println("Digite 3 para sair");
+        
+        Scanner leitor = new Scanner(System.in);
+        opcao = leitor.nextFloat();
+        
+         if(opcao == 1){
+            System.out.println("Digite o valor do quilômetro a ser convertido em metros : ");
+            valor = leitor.nextFloat();
+            conversor_1 = (valor * 1000);
+            System.out.println( valor +"metro(s) é equivalente a:" + conversor_1 +"quilômetros");
+        
+        }
+         if(opcao == 2){
+             System.out.println("Digite o valor litro a ser convertido em metros cúbicos : ");
+             valor_2 = leitor.nextFloat();
+             conversor_2 = (valor_2 / 1000);
+             System.out.println( valor_2 +"litro(s) é equivalente a:" + conversor_2 +"metros cúbicos");
+         
+         }
+        
+        if(opcao == 3){
+            System.out.println("Obrigado(a) por utilizar nosso sistema");
+            System.exit(0);
+        }
+       
+        
+        
+    }
+}
